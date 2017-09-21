@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    text-align: center;
 }
 
 nav {
@@ -12,14 +13,13 @@ nav {
     height: 9rem;
     background: rgba(255, 255, 255, 0.72);
     position: fixed;
-    text-align: right;
+    text-align: center;
+    margin: 0 auto;
 }
 
 nav a {
     text-decoration: none;
     color: rgba(236, 145, 33, 0.95);
-    padding: 1.0rem;
-    margin: 1.4rem;
 }
 
 nav a:hover {
@@ -31,41 +31,83 @@ nav a:active {
 }
 
 nav #menu {
-    vertical-align: middle;
-    float: left;
-    width: 70%;
+    
+    width: 100%;
     height: 9rem;
     font-size: 1.5rem;
     line-height: 550%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#leftMenu {
+    width: 46%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    text-align: right;
+}
+
+#leftMenu a {
+    padding: 0.4em;
+}
+
+#rightMenu a {
+    padding: 0.4em;
+}
+
+#rightMenu {
+    
+    padding: 0px;
+    margin: 0px;
+    float: left;
 }
 
 #logo {
     float: left;
-    margin-left: 5.0rem;
 }
 
 nav div a img {
     width: 9.0rem;
     float: left;
     margin-top: 0.6em;
+    padding: 0;
 }
 
-
+nav div a img:hover {
+    opacity: 0.75;
+}
 
 .empty {
-    width: 100%;
-    height: 600px;
+    width: 80%;
+    height: 40em;
 }
 
 .article {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.75);
     margin: auto auto;
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    height: 1000px;
     border: 1px solid #000000;
 }
 
 p {
     padding: 1.0em;
     line-height: 1.7em;
+}
+
+.news {
+    width: 50%;
+    padding: 2.0em;
+}
+
+hr {
+    width: 70%;
+    opacity: 0.5;
+}
+
+#footer {
+    width: 100%;
+    height: 5em;
+    background: rgb(61, 61, 61);
 }
