@@ -1,0 +1,151 @@
+<-- CSS -->
+
+.footer {
+    width: 100%;
+    height: 22em;
+    background: rgb(48, 48, 48);
+    color: white;
+    text-align: center;
+    
+}
+
+.contact {
+    width: 50%;
+    
+    float: left;
+    
+    height: 20em;
+    line-height: 160%;
+}
+
+.contact p {
+    
+    margin: 0;
+    line-height: 190%;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 3.0em;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.socials {
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 20em;
+    line-height: 160%;
+}
+
+.socials h2 {
+    text-align: center;
+    font-size: 3.0em;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+   
+}
+
+#contactMail{
+    text-decoration: none;
+    color: #FFA216;
+}
+#contactMail:hover{
+    text-decoration: none;
+    color: #9C9C9C;
+}
+
+.facebook {
+    text-align: center;
+    height: 4.4em;
+    width: 4.4em;
+    float: left;
+    margin: 2.0em;
+    margin-left: 10rem;
+    padding-right: 1.7rem;
+    
+}
+.instagram {
+    text-align: center;
+    height: 4.4em;
+    width: 4.4em;
+    float: left;
+    margin: 2.0em;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+}
+.twitter {
+    text-align: center;
+    height: 4.4em;
+    width: 4.4em;
+    float: left;
+    margin: 2.0em;
+}
+
+.facebook a {
+    color: #3b5998;
+}
+
+.twitter a {
+    color: #1dcaff;
+}
+
+.instagram a {
+    color: #B93AAE;
+}
+.facebook a:hover {
+    color: #4D83EE;
+}
+
+.twitter a:hover {
+    color: #0CACC9;
+}
+
+.instagram a:hover {
+    color: #B94DFC;
+}
+
+.iconsInside {
+    width: 100%;
+    height: 4.4em;
+    display: inline-block;
+
+}
+
+#copyright {
+    padding: 0;
+}
+
+<-- HTML -->
+<footer>
+        <div class="footer">
+            <div class="contact">
+                <br><br>
+                <h2>Contact us</h2><br>
+                <p>
+                    Rasberry Street 15 / sal.2 / 124 <br> Budhapest 55-2145 <br> phone: +45 524 424 25 <br>
+
+                    <a href="mailto:yourbudda@gmail.couk" id="contactMail"> e-mail: yourbudhha@gmail.com</a>
+
+                    
+                </p>
+            </div>
+            <div class="socials">
+                <br><br>
+                <h2>Join us</h2><br>
+                <div class="iconsInside">
+                    <div class="facebook" class="icon"><a href="http://www.facebook.com"><i class="icon-facebook"></i></a></div>
+                    <div class="twitter" class="icon"><a href="http://www.twitter.com"><i class="icon-twitter"></i></a></div>
+                    <div class="instagram" class="icon"><a href="http://www.instagram.com"><i class="icon-instagram"></i></a></div>
+                </div>
+            </div>
+            <p id="copyright">&copy; All right reserved to BestTeamEvrPeriod - Denmark 2017</p>
+                    
+        </div>
+
+    </footer>
