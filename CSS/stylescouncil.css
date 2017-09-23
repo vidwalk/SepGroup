@@ -115,3 +115,80 @@ a{
 h1{
     text-align: center;
 }
+
+.footer {
+    width: 100%;
+    height: 22em;
+    background: rgb(48, 48, 48);
+    color: white;
+    text-align: center;
+    
+}
+
+.contact {
+    width: 50%;
+    
+    float: left;
+    
+    height: 20em;
+    line-height: 160%;
+}
+
+.contact p {
+    
+    margin: 0;
+    line-height: 190%;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 3.0em;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.socials {
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 20em;
+    line-height: 160%;
+}
+
+.socials h2 {
+    text-align: center;
+    font-size: 3.0em;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+   
+}
+
+#contactMail{
+    text-decoration: none;
+    color: #FFA216;
+}
+#contactMail:hover{
+    text-decoration: none;
+    color: #9C9C9C;
+}
+
+
+#copyright {
+    padding: 0;
+}
+.iconsInside {
+    width: 100%;
+    height: 4.4em;
+    display: inline-block;
+    margin-top: 10px;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
