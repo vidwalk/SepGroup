@@ -1,6 +1,5 @@
 body {
     font-family: 'Raleway', sans-serif;
-
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +30,6 @@ nav a:active {
 }
 
 nav #menu {
-    
     width: 100%;
     height: 9rem;
     font-size: 1.5rem;
@@ -57,7 +55,6 @@ nav #menu {
 }
 
 #rightMenu {
-    
     padding: 0px;
     margin: 0px;
     float: left;
@@ -112,23 +109,22 @@ hr {
     background: rgb(61, 61, 61);
 }
 
-table{ 
-     background:url(../images/white.jpg);
-     width:90%; 
-     height:120%;
-    }
-p{
-font-family:Bebas Neue;
-font-size: 45px;    
+table {
+    background: url(../images/white.jpg);
+    width: 90%;
+    height: 120%;
 }
 
-.parallax { 
+p {
+    font-family: Bebas Neue;
+    font-size: 45px;
+}
+
+.parallax {
     /* The image used */
     background-image: url(../images/header1.png);
-
     /* Set a specific height */
-    height: 300px; 
-
+    height: 300px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -136,44 +132,40 @@ font-size: 45px;
     background-size: cover;
 }
 
-
-
 .bgimg {
-  background-image: url(../images/ex.jpg);
-  min-height: 400px;
+    background-image: url(../images/ex.jpg);
+    min-height: 400px;
 }
-
 
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .footer {
     width: 100%;
     height: 32em;
     background: rgb(48, 48, 48);
     color: white;
     text-align: center;
-    
 }
 
 .contact {
     width: 50%;
-    
     float: left;
-    
     height: 20em;
     line-height: 160%;
 }
@@ -196,7 +188,6 @@ h3 {
 .socials {
     width: 50%;
     float: left;
-        
     height: 20em;
     line-height: 160%;
 }
@@ -208,31 +199,32 @@ h3 {
     margin-top: 6px;
     font-weight: 400;
     letter-spacing: 0.03em;
-   
 }
 
-#contactMail{
+#contactMail {
     text-decoration: none;
     color: #FFA216;
 }
-#contactMail:hover{
+
+#contactMail:hover {
     text-decoration: none;
     color: #9C9C9C;
 }
-
 
 #copyright {
     padding: 0;
     font-size: 40px;
     color: white;
 }
+
 .iconsInside {
     width: 100%;
     height: 2.0em;
     display: inline-block;
     margin-top: 10px;
 }
-.icon{
+
+.icon {
     width: 60px;
     height: 60px;
     margin-left: 15px;
