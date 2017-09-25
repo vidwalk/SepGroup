@@ -1,25 +1,25 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: url("../images/backgroundCouncil.jpg"); 
-    /*background-size: 100%;*/
-    background-color: white ;
+
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    text-align: center;
 }
 
 nav {
     width: 100%;
     height: 9rem;
-    background: rgba(255, 255, 255, 0.62);
-    position: absolute;
+    background: rgba(255, 255, 255, 0.72);
+    position: fixed;
     text-align: center;
     margin: 0 auto;
 }
 
 nav a {
     text-decoration: none;
-    color: rgb(255, 140, 0);
+    color: rgba(236, 145, 33, 0.95);
 }
 
 nav a:hover {
@@ -39,6 +39,7 @@ nav #menu {
     text-align: center;
     margin: 0 auto;
 }
+
 #leftMenu {
     width: 46%;
     padding: 0px;
@@ -64,61 +65,104 @@ nav #menu {
 
 #logo {
     float: left;
-    margin-left: 4 rem;
 }
 
 nav div a img {
     width: 9.0rem;
     float: left;
     margin-top: 0.6em;
+    padding: 0;
 }
 
-
+nav div a img:hover {
+    opacity: 0.75;
+}
 
 .empty {
+    width: 80%;
+    height: 40em;
+}
+
+.article {
+    background: rgba(255, 255, 255, 0.75);
+    margin: auto auto;
     width: 100%;
-    height: 200px;
+    height: 1000px;
+    border: 1px solid #000000;
 }
 
-table{
-    border-spacing: 60px;
-    border-collapse: separate;
-    margin-left:auto; 
-    margin-right:auto;
-    border: 7px solid black; 
-    background-color: rgba(128, 128, 128, 0.81);
-    margin-bottom: 60px;
-}
-div.link{
-    text-align: center;
-    border: 5px solid orangered;    
-}
-img.council{
-    height: 710px;
-}
-td{
-    /*border: 2px solid #D8AB17; */
-    background-color: white;
-    border: 40px solid white;
-    border-top: 1px solid white;
-    padding: 10px 0 0 0;
-}
-img.councilBoris{
-    height: 700px;
-    width: 530px;
-}
-a{
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
-}
-h1{
-    text-align: center;
+p {
+    padding: 1.0em;
+    line-height: 1.7em;
 }
 
+.news {
+    width: 50%;
+    padding: 2.0em;
+}
+
+hr {
+    width: 70%;
+    opacity: 0.5;
+}
+
+#footer {
+    width: 100%;
+    height: 5em;
+    background: rgb(61, 61, 61);
+}
+
+table{ 
+     background:url(../images/white.jpg);
+     width:90%; 
+     height:120%;
+    }
+p{
+font-family:Bebas Neue;
+font-size: 45px;    
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url(../images/header1.png);
+
+    /* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.bgimg {
+  background-image: url(../images/ex.jpg);
+  min-height: 400px;
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .footer {
     width: 100%;
-    height: 22em;
+    height: 32em;
     background: rgb(48, 48, 48);
     color: white;
     text-align: center;
@@ -135,14 +179,14 @@ h1{
 }
 
 .contact p {
-    
+    font-size: 2.0em;
     margin: 0;
     line-height: 190%;
 }
 
 .contact h2 {
     text-align: center;
-    font-size: 3.0em;
+    font-size: 2.0em;
     margin-bottom: 0px;
     margin-top: 6px;
     font-weight: 400;
@@ -152,14 +196,14 @@ h1{
 .socials {
     width: 50%;
     float: left;
-    text-align: center;
+        
     height: 20em;
     line-height: 160%;
 }
 
 .socials h2 {
     text-align: center;
-    font-size: 3.0em;
+    font-size: 2.0em;
     margin-bottom: 0px;
     margin-top: 6px;
     font-weight: 400;
@@ -178,11 +222,13 @@ h1{
 
 
 #copyright {
-    padding: 20px 0px 0px 0px;
+    padding: 0;
+    font-size: 40px;
+    color: white;
 }
 .iconsInside {
     width: 100%;
-    height: 4.4em;
+    height: 2.0em;
     display: inline-block;
     margin-top: 10px;
 }
@@ -192,4 +238,3 @@ h1{
     margin-left: 15px;
     margin-right: 15px;
 }
-
