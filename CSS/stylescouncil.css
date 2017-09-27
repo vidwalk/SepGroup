@@ -10,8 +10,8 @@ body {
 
 nav {
     width: 100%;
-    height: 9rem;
-    background: rgba(255, 255, 255, 0.62);
+    
+    background: rgba(175, 112, 10, 0.15);
     position: absolute;
     text-align: center;
     margin: 0 auto;
@@ -32,8 +32,8 @@ nav a:active {
 
 nav #menu {
     width: 100%;
-    height: 9rem;
-    font-size: 1.5rem;
+    
+    font-size: 1.5em;
     line-height: 550%;
     text-align: center;
     margin: 0 auto;
@@ -63,11 +63,11 @@ nav #menu {
 
 #logo {
     float: left;
-    margin-left: 4 rem;
+    margin-left: 4 em;
 }
 
 nav div a img {
-    width: 9.0rem;
+    width: 5.0em;
     float: left;
     margin-top: 0.6em;
 }
@@ -191,4 +191,9 @@ h1 {
     height: 60px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+audio {
+    width: 70px;
+    float: right;
 }
