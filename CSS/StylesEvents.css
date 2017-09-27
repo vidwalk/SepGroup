@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    margin: 0 0;
 }
 
 th {
@@ -14,7 +15,7 @@ td {
     min-width: 150px;
     min-height: 200px;
     vertical-align: top;
-    line-height: 1.4em;
+    
 }
 
 td.description {
@@ -80,7 +81,7 @@ nav #menu {
 
 #logo {
     float: left;
-    margin-left: 4 em;
+    
 }
 
 nav div a img {
