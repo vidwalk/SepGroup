@@ -110,7 +110,7 @@ img.councilBoris {
 }
 
 a {
-    font-size: 30px;
+    
     color: black;
     text-decoration: none;
 }
@@ -196,4 +196,7 @@ h1 {
 audio {
     width: 70px;
     float: right;
+}
+.link{
+    font-size: 30px;
 }

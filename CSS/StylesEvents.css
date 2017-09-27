@@ -1,6 +1,5 @@
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
     margin: 0 0;
 }
 
@@ -177,3 +176,5 @@ audio {
     width: 70px;
     float: right;
 }
+table { font-size: 20px; 
+    }
