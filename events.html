@@ -2,106 +2,344 @@
 <html lang="en">
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="CSS/StylesEvents.css">
-	<title>EVENTS</title>
-</head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/stylesEvents.css">
 
-<body>
-	<nav>
+  <body>
+    <!--NAVIGATION-->
+    <div class="my-navbar">
+      <nav class="navbar navbar-inverse">
+        <div id="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="front.html" class="visible-xs hidden-sm">
+                <img class="logo" src="images/logo.png">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav nav-justified " id="list">
 
-		<div id="menu">
-			<audio controls>
-				<source src="music\Mattia_Vlad_Morleo_-_Respiro.mp3" type=audio/mpeg>
-			</audio>
-			<div id="leftMenu">
-				<a href="frontPage.html">main page</a>
-				<a href="events.html">events</a>
-			</div>
+                <li>
+                  <a href="front.html">home</a>
+                </li>
+                <li>
+                  <a href="events.html">events</a>
+                </li>
+                <li class="hidden-xs">
+                  <a href="front.html">
+                    <img class="logo" src="images/logo.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="council.html">council</a>
+                </li>
+                <li>
+                  <a href="about.html">about us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--- End Navigation -->
+    <!--- Header -->
+    <div id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-ml-6">
+            <h1>Events</h1>
+            <p>In our center we are providing events which you will love. We are working with over a hundred specilest from
+              whole world. You can easily get info about the event and join.If you want to dont miss our events join US it
+              take few seconds</p>
+            <button class="btn btn-primary col-lg-5">Log in</button>
+            <button class="btn btn-success col-lg-5">Register</button>
+          </div>
+          <div class="col-lg-6 col-ml-8">
 
-			<div id="logo"><a href="frontPage.html"><img src="images/logo.png" alt="logo"></a>
-			</div>
-
-			<div id="rightMenu">
-				<a href="Council.html">council</a>
-				<a href="about.html">about us</a>
-			</div>
-
-		</div>
-	</nav>
-	<br>
-	<h1>EVENTS</h1>
-	<table>
-		<tr>
-			<th>Photo</th>
-			<th>Events</th>
-			<th>Price</th>
-		</tr>
-		<tr>
-			<td><img src="images/men.jpg" class="Images" alt="Fender Rhodes" /></td>
-			<td class="description">
-				<h1>Yoga for men</h1>This class started in 2010 and has been held every term time Thursday evening since then. It comprises
-				all of the usual elements of traditional Hatha Yoga including: centring via breath awareness, postures/stretching (asanas),
-				breathing practices (pranayama), sound practices (mantra) and guided relaxation (often in the form of Yoga Nidra). Some
-				of the class will be in a flowing, dynamic style.</td>
-			<td>10DKK</td>
-		</tr>
-		<tr>
-			<td><img src="images/old.jpg" class="Images" alt="Wurlitzer EP200" /></td>
-			<td class="description">
-				<h1>You are never too old for YOGGA</h1>Come together with like-minded individuals and be a part of Australia’s ‘Biggest
-				Yoga Class’. Be part of the combined energy of up to 500 yogis practising together and reap the mental and physically
-				rewards of this 1 hour outdoor class. Practise yoga one of Sydney’s most beautifully discreet locations looking at the
-				harbour and city skyline Yoga helps to relieve stress and expel negative energy One-hour class is held a couple of times
-				a year so come and join in the energy and fun</td>
-			<td>340DKK</td>
-		</tr>
-		<tr>
-			<td><img src="images/sexy.jpg" class="Images" alt="Hohner Clavinet D6" /></td>
-			<td class="description">
-				<h1>SEXY body</h1>This workshop is for you that wishes to become more confidant with flipping upside down and also you who
-				have a desire to relinquish the fear of falling. This means that you will be challenged both physically and mentally
-				and you might experience that some of your boundaries are being pushed, both on and off the yoga mat.</td>
-			<td>400DKK</td>
-		</tr>
-
-		<tr>
-			<td><img src="images/sun.jpg" class="Images" alt="Hohner Clavinet D6" /></td>
-			<td class="description">
-				<h1>Fresh Morning</h1>On the daily classes, inversions are sometimes a small part of the yoga practice, and we often feel
-				like there is not enough time to go deeper into them and explore the effect they can have on the body.</td>
-			<td>250DKK</td>
-		</tr>
-	</table>
-	<footer>
-		<div class="footer">
-			<div class="contact">
-				<br><br>
-				<h2>Contact us</h2><br>
-				<p>
-					Rasberry Street 15 / sal.2 / 124 <br> Budhapest 55-2145 <br> phone: +45 524 424 25 <br>
-
-					<a href="mailto:yourbudda@gmail.couk" id="contactMail"> e-mail: yourbudhha@gmail.com</a>
+          </div>
 
 
-				</p>
-			</div>
-			<div class="socials">
-				<br><br>
-				<h2>Join us</h2><br>
-				<div class="iconsInside">
-					<a href="http://www.facebook.com" target="_blank"><img class="icon" src="images/facebook-icon.png"></a>
-					<a href="http://www.twitter.com" target="_blank"><img class="icon" src="images/twitter-icon.jpg"></a>
-					<a href="http://www.instagram.com" target="_blank"><img class="icon" src="images/instagram-icon.jpg"></a>
-				</div>
-				
-			</div>
+        </div>
+      </div>
+    </div>
 
-			<p id="copyright">&copy; All right reserved to BestTeamEvrPeriod - Denmark 2017</p>
+    <!---- End Header ---->
+    <!--- Events ---->
+    <div id="services" class="services">
+      <div class="container">
+        <h2 class="wow fadeInUp">Events</h2>
+        <p class="wow fadeInUp" data-wow-delay="0.4">Lorem Ipsum is simply dummy text of the printing and typesettin dummy text</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 wow fadeInLeft">
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            <h4>Healthy</h4>
+            <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+          </div>
+          <div class="col-lg-3 col-md-3 wow fadeInLeft">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            <h4>Discover your soul</h4>
+            <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+          </div>
+          <div class="col-lg-3 col-md-3 wow fadeInLeft">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <h4>Meet new poeple</h4>
+            <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+          </div>
+          <div class="col-lg-3 col-md-3 wow fadeInLeft">
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <h4>Freelencers</h4>
+            <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		</div>
+    <div id="eventis" class="eventis">
+      <div class="container">
+        <div class="row">
+          <h2>Coming soon</h2>
+          <p>Here you can se upcoming events get more info and join</p>
+          <div class="col-lg-3 col-md-3">
+            <div class="events">
+              <h4>Play with Chakra</h4>
+              <h1>10.11.2007</h1>
+              <b>100kr</b>
+              <p>Event is focused how to use your body energy for every day life</p>
+              <hr>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <button class="btn btn-success">Join now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="events">
+              <h4>Planting tress</h4>
+              <h1>24.11.2007</h1>
+              <b>100kr</b>
+              <p>Event is focused how to use your body energy for every day life</p>
+              <hr>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <button class="btn btn-success">Join now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="events">
+              <h4>Yoga with Mia</h4>
+              <h1>10.12.2007</h1>
+              <b>100kr</b>
+              <p>Event is focused how to use your body energy for every day life</p>
+              <hr>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <button class="btn btn-success">Join now</button>
+            </div>
+          </div>
 
-	</footer>
-</body>
+          <div class="col-lg-3 col-md-3">
+            <div class="events">
+              <h4>Huging Trees</h4>
+              <h1>18.12.2007</h1>
+              <b>100kr</b>
+              <p>Event is focused how to use your body energy for every day life</p>
+              <hr>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <li>30 participants</li>
+              <li>Gucci</li>
+              <button class="btn btn-success">Join now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="teachers" class="teachers">
+      <div class="container">
+        <div class="row">
+          <h2>Meet our Lectures</h2>
+          <p>We are the best </p>
+          <div class="col-lg-3 col-md-3">
+            <img src="images/Mia.jpg" class="img-circle" alt="">
+            <h4>Mia</h4>
+            <b>Yoga teacher</b>
+            <p>Find benefits of yoga classes
+              <p>
+                <a href="facebook.com">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="twitter.com">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="instragram.com">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+
+          </div>
+
+
+          <div class="col-lg-3 col-md-3">
+            <img src="images/snoop.jpg" class="img-circle" alt="">
+            <h4>Snoop</h4>
+            <b>Nature monk</b>
+            <p>Power is in the nature
+              <p>
+                <a href="facebook.com">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="twitter.com">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="instagram.com">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+            <img src="images/11.jpg" class="img-circle" alt="">
+            <h4>11</h4>
+            <b>Mind power</b>
+            <p>Simple she is the best!
+              <p>
+                <a href="facebook.com">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="twitter.com">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="instagram.com">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-3">
+            <img src="images/yoda.png" class="img-circle" alt="">
+            <h4>Yoda</h4>
+            <b>Jedi Master</b>
+            <p>Follow force
+              <p>
+                <a href="facebook.com">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="twitter.com">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="instagram.com">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <h2>Contact</h2>
+          <div class="col-lg-6 col-md-6">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon" id="sizing-addon1">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <input type="text" class="form-control" aria-describedy="sizing-addon1" placeholder="Full Name">
+            </div>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon" id="sizing-addon1">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </span>
+              <input type="text" class="form-control" aria-describedy="sizing-addon1" placeholder="Email Address">
+            </div>
+
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon" id="sizing-addon1">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+              </span>
+              <input type="text" class="form-control" aria-describedy="sizing-addon1" placeholder="Phone Number">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6"></div>
+          <div class="input-group">
+            <textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
+          </div>
+          <button class="btn btn-lg">Sumbit your message</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer id="myFooter">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <img id="logo-footer" src="images/logo.png">
+          </div>
+          <div class="col-sm-2">
+            <h5>Look all over our pages</h5>
+            <ul>
+              <li>
+                <a href="front.html">Home Page</a>
+              </li>
+              <li>
+                <a href="events.html">Events</a>
+              </li>
+              <li>
+                <a href="council.html">Council</a>
+              </li>
+              <li>
+                <a href="about.html">About us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2">
+            <h5>Contact data</h5>
+            <ul>
+              <li>Rasberry Street 15 / sal.2 / 124</li>
+              <li>Budhapest 55-2145</li>
+              <li>phone: +45 524 424 25</li>
+              <li>e-mail: yourbudhha@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="social-networks">
+              <a href="twitter.com" class="twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="facebook.com" class="facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="google.com" class="google">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </div>
+            <button type="button" class="btn btn-default">Contact us now</button>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+
+        <div class="footer-copyright">
+          <p>© 2017 BestTeamEverPeriod </p>
+        </div>
+    </footer>
+    </div>
+  </body>
 
 </html>

@@ -3,114 +3,177 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/StylesCouncil.css">
-    
-    <title>Vassana</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="CSS/stylesCouncil.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>CouncilPage</title>
 </head>
 
 <body>
-    <nav>
 
-        <div id="menu">
-            <audio controls>
-                <source src="music\Mattia_Vlad_Morleo_-_Respiro.mp3" type=audio/mpeg>
-            </audio>
-            <div id="leftMenu">
-                <a href="frontPage.html">main page</a>
-                <a href="events.html">events</a>
+    <nav class="navbar navbar-inverse">
+        <div id="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="front.html" class="visible-xs hidden-sm">
+                        <img class="logo" src="images/logo.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav nav-justified " id="list">
+  
+                        <li>
+                            <a href="front.html">home</a>
+                        </li>
+                        <li>
+                            <a href="events.html">events</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="front.html">
+                                <img class="logo" src="images/logo.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="council.html">council</a>
+                        </li>
+                        <li>
+                            <a href="about.html">about us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div id="logo"><a href="frontPage.html"><img src="images/logo.png" alt="logo"></a>
-            </div>
-
-            <div id="rightMenu">
-                <a href="Council.html">council</a>
-                <a href="about.html">about us</a>
-            </div>
-
         </div>
     </nav>
-    <div class="main">
+    <div class="container-fluid">
+        <div class="row">
 
-        <div class="empty"></div>
+            <div class="col-md-12">
+                <div class="col-sm-4">
+                    <div class="hidden-xs hidden-sm">
+                        <br>
 
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <h1>Eduard Costea</h1>
-                        <img class="council" src="images/Eduard.jpg">
-                        <div class="link">
-                            <a href="mailto:costeaeduardnic@gmail.com">costeaeduardnic@gmail.com</a>
+                        <br> </div>
+                    <h1>Council</h1>
+                    <div class="hidden-xs hidden-sm hidden-md">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="para">
+
+                        <span>
+                            <p> Our council consists of the best and most spiritual personas in Denmark, all of which want to
+                                teach and change lifes of lost people who feel the urge to do so.
+                                <br>
+                                <br> Find your new path with us!
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/Boris.jpg" alt="boris">
+                            <p>Boris Sidlo</p>
                         </div>
-                    </td>
-
-                    <td>
-                        <h1>Claudiu Rediu</h1>
-                        <img class="council" src="images/Claudiu.jpg">
-                        <div class="link">
-                            <a href="mailto:claudiurediu@gmail.com">claudiurediu@gmail.com</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/Claudiu.jpg" alt="claudi">
+                            <p>Claudiu Rediu</p>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h1>Boris Sildo</h1>
-                        <img class="councilBoris" src="images/Boris.jpg">
-                        <div class="link">
-                            <a href="mailto:boris.sidlo@icloud.com">boris.sidlo@icloud.com</a>
-                        </div>
-                    </td>
-                    <td>
-                        <h1>Michal Ciebien</h1>
-                        <img class="councilBoris" src="images/Michal.jpg">
-                        <div class="link">
-                            <a href="mailto:skorejen@gmail.com">skorejen@gmail.com</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-    </div>
-
-
-
-
-
-
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="contact">
-                <br><br>
-                <h2>Contact us</h2><br>
-                <p>
-                    Rasberry Street 15 / sal.2 / 124 <br> Budhapest 55-2145 <br> phone: +45 524 424 25 <br>
-
-                    <a href="mailto:yourbudda@gmail.couk" id="contactMail"> e-mail: yourbudhha@gmail.com</a>
-
-
-                </p>
-            </div>
-            <div class="socials">
-                <br><br>
-                <h2>Join us</h2><br>
-                <div class="iconsInside">
-                    <a href="http://www.facebook.com" target="_blank"><img class="icon" src="images/facebook-icon.png"></a>
-                    <a href="http://www.twitter.com" target="_blank"><img class="icon" src="images/twitter-icon.jpg"></a>
-                    <a href="http://www.instagram.com" target="_blank"><img class="icon" src="images/instagram-icon.jpg"></a>
+                    </div>
                 </div>
 
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/Eduard.jpg" alt="boris">
+                            <p>Eduard Nicolae Costea</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="images/Michal.jpg" alt="claudi">
+                            <p>Michal Ciebien</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p id="copyright">&copy; All right reserved to BestTeamEvrPeriod - Denmark 2017</p>
 
         </div>
+        </div>
+        <footer id="myFooter">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img id="logo-footer" src="images/logo.png">
+                </div>
+                <div class="col-sm-2">
+                    <h5>Look all over our pages</h5>
+                    <ul>
+                        <li>
+                            <a href="home.html">Home Page</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="council.html">Council</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
 
-    </footer>
+                <div class="col-sm-2">
+                    <h5>Contact data</h5>
+                    <ul>
+                        <li>Rasberry Street 15 / sal.2 / 124</li>
+                        <li>Budhapest 55-2145</li>
+                        <li>phone: +45 524 424 25</li>
+                        <li>e-mail: yourbudhha@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="twitter.com" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="facebook.com" class="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="google.com" class="google">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us now</button>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+
+            <div class="footer-copyright">
+                <p>© 2017 BestTeamEverPeriod </p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

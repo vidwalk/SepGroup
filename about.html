@@ -2,48 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="css/StylesAbout.css" type="text/css" rel="stylesheet" />
-
-    <head>
-
-    </head>
-
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!--Source of icons-->
 
     <body>
 
 
 
 
-        <nav>
+        <nav class="navbar navbar-inverse">
+            <div id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="front.html" class="visible-xs hidden-sm">
+                            <img class="logo-nav" src="images/logo.png">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav nav-justified " id="list">
 
-            <div id="menu">
-                <audio controls>
-                    <source src="music\Mattia_Vlad_Morleo_-_Respiro.mp3" type=audio/mpeg>
-                </audio>
-                <div id="leftMenu">
-                    <a href="frontPage.html">main page</a>
-                    <a href="events.html">events</a>
+                            <li>
+                                <a href="front.html">home</a>
+                            </li>
+                            <li>
+                                <a href="events.html">events</a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="front.html">
+                                    <img class="logo-nav" src="images/logo.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="council.html">council</a>
+                            </li>
+                            <li>
+                                <a href="about.html">about us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div id="logo"><a href="frontPage.html"><img src="images/logo.png" alt="logo"></a>
-                </div>
-
-                <div id="rightMenu">
-                    <a href="council.html">council</a>
-                    <a href="about.html">about us</a>
-                </div>
-
             </div>
         </nav>
 
 
-        <img src="images/cover.jpg" style="width:100%; height:120%" />
+        <!-- Carousel -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-center m-auto">
+                    <h2>
+                        <span>About
+                            <b>us</b>
+                        </span>
+                    </h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner ">
+                            <div class="item carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+                                        <div class="img-box">
+                                            <img src="images/about/2.jpg" class="img-responsive img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+                                        <div class="img-box">
+                                            <img src="images/about/1.jpg" class="img-responsive img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+                                        <div class="img-box">
+                                            <img src="images/about/3.jpg" class="img-responsive img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+
+
+        <!-- /Carousel -->
+
+        <!-- txt -->
 
         <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
 
@@ -52,48 +139,88 @@
         </div>
 
 
-        <div class="parallax"></div>
-
-
-        <div class="parallax"></div>
-
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-                <p>Today events at VIA also includes spiritual practices not directly linked to any religion like dream interpretations,
-                    healing, astrology, reincarnation, Karma, alternative health care and similar</p>
-            </div>
+        <div class="parallax1"></div>
+        <div class="parallax1"></div <div style="position:relative">
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>Today events at VIA also includes spiritual practices not directly linked to any religion like dream interpretations,
+                healing, astrology, reincarnation, Karma, alternative health care and similar</p>
+        </div>
         </div>
 
+        <div class="parallax2"></div>
+        <div class="parallax2"></div>
 
-        <footer>
-            <div class="footer">
-                <div class="contact">
-                    <br><br>
-                    <h2>Contact us</h2><br>
-                    <p>
-                        Rasberry Street 15 / sal.2 / 124 <br> Budhapest 55-2145 <br> phone: +45 524 424 25 <br>
-
-                        <a href="mailto:yourbudda@gmail.couk" id="contactMail"> e-mail: yourbudhha@gmail.com</a>
+        <!-- /txt -->
 
 
-                    </p>
-                </div>
-                <div class="socials">
-                    <br><br>
-                    <h2>Join us</h2><br>
-                    <div class="iconsInside">
-                        <a href="http://www.facebook.com" target="_blank"><img class="icon" src="images/facebook-icon.png"></a>
-                        <a href="http://www.twitter.com" target="_blank"><img class="icon" src="images/twitter-icon.jpg"></a>
-                        <a href="http://www.instagram.com" target="_blank"><img class="icon" src="images/instagram-icon.jpg"></a>
+        <!-- Review -->
+        <div style="color: #777;background-color:white;text-align:center;">
+
+            <iframe class="iframe" height="600px" src="reviews.html" frameborder="0" style="width:100%"></iframe>
+
+        </div>
+
+        <!-- /Review -->
+
+        <!-- Footer -->
+
+        <footer id="myFooter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img id="logo-footer" src="images/logo.png">
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Look all over our pages</h5>
+                        <ul>
+                            <li>
+                                <a href="front.html">Home Page</a>
+                            </li>
+                            <li>
+                                <a href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a href="council.html">Council</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About us</a>
+                            </li>
+                        </ul>
                     </div>
 
+                    <div class="col-sm-2">
+                        <h5>Contact data</h5>
+                        <ul>
+                            <li>Rasberry Street 15 / sal.2 / 124</li>
+                            <li>Budhapest 55-2145</li>
+                            <li>phone: +45 524 424 25</li>
+                            <li>e-mail: yourbudhha@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="social-networks">
+                            <a href="twitter.com" class="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="facebook.com" class="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="google.com" class="google">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                        <button type="button" class="btn btn-default">Contact us now</button>
+                    </div>
                 </div>
+                <div class="col-sm-1"></div>
 
-
-            </div>
-            <p id="copyright">&copy; All right reserved to BestTeamEvrPeriod - Denmark 2017</p>
+                <div class="footer-copyright">
+                    <p>© 2017 BestTeamEverPeriod </p>
+                </div>
         </footer>
+        </div>
 
+        <!--/Footer -->
 
 
     </body>
