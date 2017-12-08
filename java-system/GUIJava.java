@@ -74,8 +74,6 @@ public class GUIJava
    private JTextField txtInputLecturer;
    private JTextField txtInputSponsor;
    private JTextField textField_23;
-   private JTextField textField_24;
-   private JTextField textField_25;
    private JTextField textField_26;
    private JTextField textField_27;
    private JTextField textField_28;
@@ -117,6 +115,8 @@ public class GUIJava
    private JButton btnListIfNot;
    private JLabel lblListThoseWho;
    private JTextField textField_41;
+   private JButton btnNonFinalized;
+   private JButton btnFinalized;
 
    /**
     * Launch the application.
@@ -415,31 +415,21 @@ public class GUIJava
       panel_4.add(textField_23);
       textField_23.setColumns(10);
       
-      textField_24 = new JTextField();
-      textField_24.setBounds(219, 85, 86, 20);
-      panel_4.add(textField_24);
-      textField_24.setColumns(10);
-      
-      textField_25 = new JTextField();
-      textField_25.setBounds(383, 85, 86, 20);
-      panel_4.add(textField_25);
-      textField_25.setColumns(10);
-      
       JLabel lblNewLabel_8 = new JLabel("Category");
       lblNewLabel_8.setBounds(77, 68, 68, 14);
       panel_4.add(lblNewLabel_8);
       
-      JLabel lblNewLabel_9 = new JLabel("Non Finalized");
-      lblNewLabel_9.setBounds(229, 68, 76, 14);
-      panel_4.add(lblNewLabel_9);
-      
-      JLabel lblNewLabel_10 = new JLabel("Finalized");
-      lblNewLabel_10.setBounds(400, 68, 69, 14);
-      panel_4.add(lblNewLabel_10);
-      
       btnSearch_1 = new JButton("Search");
       btnSearch_1.setBounds(56, 147, 89, 23);
       panel_4.add(btnSearch_1);
+      
+      btnNonFinalized = new JButton("Non Finalized");
+      btnNonFinalized.setBounds(205, 147, 122, 23);
+      panel_4.add(btnNonFinalized);
+      
+      btnFinalized = new JButton("Finalized");
+      btnFinalized.setBounds(383, 147, 113, 23);
+      panel_4.add(btnFinalized);
       
       JPanel panel_10 = new JPanel();
       tabbedPane_1.addTab("Lecturer and Sponsor", null, panel_10, null);
