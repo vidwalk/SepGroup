@@ -116,6 +116,7 @@ public class GUIJava
    private JLabel lblPreference;
    private JButton btnListIfNot;
    private JLabel lblListThoseWho;
+   private JTextField textField_41;
 
    /**
     * Launch the application.
@@ -186,9 +187,9 @@ public class GUIJava
       panel_6.setLayout(null);
       
       txtEventToEdit = new JTextField();
-      txtEventToEdit.setBounds(6, 30, 86, 20);
+      txtEventToEdit.setBounds(6, 30, 141, 20);
       panel_6.add(txtEventToEdit);
-      txtEventToEdit.setText("Event To Edit");
+      txtEventToEdit.setText("Event To Edit/Remove");
       txtEventToEdit.setColumns(10);
       
       textField = new JTextField();
@@ -241,11 +242,11 @@ public class GUIJava
       panel_6.add(lblName);
       
       lblNewLabel = new JLabel("Number of Participants");
-      lblNewLabel.setBounds(117, 73, 109, 14);
+      lblNewLabel.setBounds(107, 73, 141, 14);
       panel_6.add(lblNewLabel);
       
       lblNewLabel_1 = new JLabel("Number of Members");
-      lblNewLabel_1.setBounds(257, 73, 105, 14);
+      lblNewLabel_1.setBounds(257, 73, 119, 14);
       panel_6.add(lblNewLabel_1);
       
       lblLength = new JLabel("Length");
@@ -253,23 +254,23 @@ public class GUIJava
       panel_6.add(lblLength);
       
       lblNewLabel_2 = new JLabel("Discount");
-      lblNewLabel_2.setBounds(560, 73, 46, 14);
+      lblNewLabel_2.setBounds(560, 73, 65, 14);
       panel_6.add(lblNewLabel_2);
       
       lblNewLabel_3 = new JLabel("Finalized");
-      lblNewLabel_3.setBounds(30, 140, 46, 14);
+      lblNewLabel_3.setBounds(30, 140, 62, 14);
       panel_6.add(lblNewLabel_3);
       
       lblType = new JLabel("Type of Event");
-      lblType.setBounds(140, 140, 74, 14);
+      lblType.setBounds(140, 140, 96, 14);
       panel_6.add(lblType);
       
       lblVeganFood = new JLabel("Vegan Food*");
-      lblVeganFood.setBounds(274, 140, 68, 14);
+      lblVeganFood.setBounds(274, 140, 86, 14);
       panel_6.add(lblVeganFood);
       
       lblNewLabel_4 = new JLabel("Location");
-      lblNewLabel_4.setBounds(423, 140, 46, 14);
+      lblNewLabel_4.setBounds(423, 140, 70, 14);
       panel_6.add(lblNewLabel_4);
       
       lblSearchEvent = new JLabel("Search Event");
@@ -315,7 +316,7 @@ public class GUIJava
       panel_2.add(lblNewLabel_6);
       
       lblNewLabel_7 = new JLabel("Category");
-      lblNewLabel_7.setBounds(420, 18, 46, 14);
+      lblNewLabel_7.setBounds(420, 18, 69, 14);
       panel_2.add(lblNewLabel_7);
       
       panel_5 = new JPanel();
@@ -344,11 +345,11 @@ public class GUIJava
       panel_5.add(lblName_2);
       
       lblEmailAdress = new JLabel("Email Adress");
-      lblEmailAdress.setBounds(144, 18, 70, 14);
+      lblEmailAdress.setBounds(138, 18, 86, 14);
       panel_5.add(lblEmailAdress);
       
       lblCategory = new JLabel("Category");
-      lblCategory.setBounds(280, 18, 46, 14);
+      lblCategory.setBounds(269, 18, 66, 14);
       panel_5.add(lblCategory);
       
       JPanel panel_9 = new JPanel();
@@ -401,6 +402,10 @@ public class GUIJava
       lblYear.setBounds(40, 66, 46, 14);
       panel_14.add(lblYear);
       
+      JButton btnRemove = new JButton("Remove");
+      btnRemove.setBounds(580, 389, 89, 23);
+      panel_6.add(btnRemove);
+      
       JPanel panel_4 = new JPanel();
       tabbedPane_1.addTab("Search Events", null, panel_4, null);
       panel_4.setLayout(null);
@@ -421,15 +426,15 @@ public class GUIJava
       textField_25.setColumns(10);
       
       JLabel lblNewLabel_8 = new JLabel("Category");
-      lblNewLabel_8.setBounds(77, 68, 46, 14);
+      lblNewLabel_8.setBounds(77, 68, 68, 14);
       panel_4.add(lblNewLabel_8);
       
       JLabel lblNewLabel_9 = new JLabel("Non Finalized");
-      lblNewLabel_9.setBounds(229, 68, 63, 14);
+      lblNewLabel_9.setBounds(229, 68, 76, 14);
       panel_4.add(lblNewLabel_9);
       
       JLabel lblNewLabel_10 = new JLabel("Finalized");
-      lblNewLabel_10.setBounds(400, 68, 46, 14);
+      lblNewLabel_10.setBounds(400, 68, 69, 14);
       panel_4.add(lblNewLabel_10);
       
       btnSearch_1 = new JButton("Search");
@@ -475,11 +480,11 @@ public class GUIJava
       panel_11.add(label_1);
       
       JLabel label_2 = new JLabel("Email Adress");
-      label_2.setBounds(279, 18, 66, 14);
+      label_2.setBounds(279, 18, 95, 14);
       panel_11.add(label_2);
       
       JLabel label_3 = new JLabel("Category");
-      label_3.setBounds(420, 18, 46, 14);
+      label_3.setBounds(420, 18, 69, 14);
       panel_11.add(label_3);
       
       JPanel panel_12 = new JPanel();
@@ -508,11 +513,11 @@ public class GUIJava
       panel_12.add(label_4);
       
       JLabel label_5 = new JLabel("Email Adress");
-      label_5.setBounds(144, 18, 70, 14);
+      label_5.setBounds(144, 18, 92, 14);
       panel_12.add(label_5);
       
       JLabel label_6 = new JLabel("Category");
-      label_6.setBounds(280, 18, 46, 14);
+      label_6.setBounds(280, 18, 76, 14);
       panel_12.add(label_6);
       
       txtInputLecturer = new JTextField();
@@ -522,7 +527,7 @@ public class GUIJava
       txtInputLecturer.setColumns(10);
       
       JLabel lblSearchLecturer = new JLabel("Search Lecturer");
-      lblSearchLecturer.setBounds(57, 31, 80, 14);
+      lblSearchLecturer.setBounds(57, 31, 106, 14);
       panel_10.add(lblSearchLecturer);
       
       txtInputSponsor = new JTextField();
@@ -532,7 +537,7 @@ public class GUIJava
       txtInputSponsor.setColumns(10);
       
       JLabel lblSearchSponsor = new JLabel("Search Sponsor");
-      lblSearchSponsor.setBounds(57, 238, 86, 14);
+      lblSearchSponsor.setBounds(57, 238, 106, 14);
       panel_10.add(lblSearchSponsor);
       
       JButton btnSearch = new JButton("Search");
@@ -560,11 +565,11 @@ public class GUIJava
       textField_27.setColumns(10);
       
       JLabel lblCategoryOfLecturers = new JLabel("Category of Lecturers");
-      lblCategoryOfLecturers.setBounds(21, 117, 114, 14);
+      lblCategoryOfLecturers.setBounds(21, 117, 140, 14);
       panel_13.add(lblCategoryOfLecturers);
       
       JLabel lblCategoryOfSponsors = new JLabel("Category of Sponsors");
-      lblCategoryOfSponsors.setBounds(21, 191, 114, 14);
+      lblCategoryOfSponsors.setBounds(21, 191, 140, 14);
       panel_13.add(lblCategoryOfSponsors);
       
       textField_28 = new JTextField();
@@ -575,6 +580,10 @@ public class GUIJava
       JLabel lblEvent = new JLabel("Event");
       lblEvent.setBounds(53, 44, 46, 14);
       panel_13.add(lblEvent);
+      
+      JButton btnRemove_1 = new JButton("Remove");
+      btnRemove_1.setBounds(180, 408, 89, 23);
+      panel_10.add(btnRemove_1);
       
       JPanel panel_1 = new JPanel();
       tabbedPane.addTab("Member", null, panel_1, null);
@@ -589,7 +598,7 @@ public class GUIJava
       panel_7.setLayout(null);
       
       btnCreateMember = new JButton("Create Member");
-      btnCreateMember.setBounds(45, 53, 112, 23);
+      btnCreateMember.setBounds(45, 53, 132, 23);
       panel_7.add(btnCreateMember);
       
       panel_16 = new JPanel();
@@ -666,7 +675,7 @@ public class GUIJava
       panel_16.add(lblName_3);
       
       lblEmailAdress_1 = new JLabel("Email Adress");
-      lblEmailAdress_1.setBounds(144, 19, 71, 14);
+      lblEmailAdress_1.setBounds(144, 19, 98, 14);
       panel_16.add(lblEmailAdress_1);
       
       lblAdress = new JLabel("Adress");
@@ -674,20 +683,33 @@ public class GUIJava
       panel_16.add(lblAdress);
       
       lblNewLabel_12 = new JLabel("Year of Payment");
-      lblNewLabel_12.setBounds(132, 89, 80, 14);
+      lblNewLabel_12.setBounds(132, 89, 110, 14);
       panel_16.add(lblNewLabel_12);
       
       lblCategory_1 = new JLabel("Category");
-      lblCategory_1.setBounds(265, 89, 46, 14);
+      lblCategory_1.setBounds(265, 89, 67, 14);
       panel_16.add(lblCategory_1);
       
       lblNewLabel_11 = new JLabel("Telephone Number");
-      lblNewLabel_11.setBounds(10, 89, 104, 14);
+      lblNewLabel_11.setBounds(10, 89, 124, 14);
       panel_16.add(lblNewLabel_11);
       
       btnSubmit_1 = new JButton("Submit");
       btnSubmit_1.setBounds(45, 460, 89, 23);
       panel_7.add(btnSubmit_1);
+      
+      textField_41 = new JTextField();
+      textField_41.setBounds(513, 54, 86, 20);
+      panel_7.add(textField_41);
+      textField_41.setColumns(10);
+      
+      JLabel lblSelectMember = new JLabel("Select Member");
+      lblSelectMember.setBounds(525, 33, 105, 20);
+      panel_7.add(lblSelectMember);
+      
+      JButton btnRemove_2 = new JButton("Remove");
+      btnRemove_2.setBounds(505, 100, 105, 23);
+      panel_7.add(btnRemove_2);
       
       JPanel panel_8 = new JPanel();
       tabbedPane_4.addTab("List Members", null, panel_8, null);
@@ -698,7 +720,7 @@ public class GUIJava
          public void actionPerformed(ActionEvent arg0) {
          }
       });
-      btnListByEmails.setBounds(63, 53, 123, 23);
+      btnListByEmails.setBounds(63, 56, 140, 23);
       panel_8.add(btnListByEmails);
       
       btnListByPreference = new JButton("List By Preference");
