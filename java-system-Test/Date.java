@@ -7,7 +7,7 @@ public class Date implements Serializable
    private int day;
    private int month;
    private int year;
-   
+
    public Date(int day, int month, int year)
    {
       this.year = year;
@@ -43,7 +43,7 @@ public class Date implements Serializable
       switch (month)
       {
          case 1: this.day=31;
-         case 2:{if ((((this.year % 4 == 0) && (this.year % 100 != 100))|| (this.year % 400 == 0))) this.day=28; 
+         case 2:{if ((((this.year % 4 == 0) && (this.year % 100 != 100))|| (this.year % 400 == 0))) this.day=28;
          else this.day=29;}
          case 3:this.day=31;
          case 4:this.day=30;
@@ -55,7 +55,7 @@ public class Date implements Serializable
          case 10:this.day=31;
          case 11:this.day=30;
          case 12:this.day=31;
-         
+
       }
    }
 
@@ -76,17 +76,6 @@ public class Date implements Serializable
          return (day + "/0" + month + "/" + year);
       else
          return (day + "/" + month + "/" + year);
-   }
-
-   @Override
-   public int hashCode()
-   {
-      final int prime = 31;
-      int result = 1;
-      result = prime * result + day;
-      result = prime * result + month;
-      result = prime * result + year;
-      return result;
    }
 
    @Override

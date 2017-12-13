@@ -11,9 +11,8 @@ import java.io.Serializable;
 public final class FileHandler  implements Serializable
 {
    /**
-    * 
+    *
     */
-   private static final long serialVersionUID = 2569757137898608978L;
    public static File eventFile;
    public FileHandler()
    {
@@ -25,8 +24,8 @@ public final class FileHandler  implements Serializable
       File file = new File(filename);
       try {
          PrintWriter out = new PrintWriter(file); // Open the file
-        
-               
+
+
                out.print(membersEmails);
                out.flush(); // Force it to write the text
                out.close(); // Close the file
@@ -34,12 +33,12 @@ public final class FileHandler  implements Serializable
       }
       catch(FileNotFoundException e)
       {
-         
+
       }
-      
-      
+
+
    }
-   
+
    public static void saveMembers(Member[] members)
    {
       ObjectOutputStream out = null;
@@ -53,13 +52,13 @@ public final class FileHandler  implements Serializable
       {
          out.writeObject(members[i]);
       }
-      
+
       }
       catch(IOException e)
       {
          e.printStackTrace();
       }
-      
+
       finally
       {
       try
@@ -72,7 +71,7 @@ public final class FileHandler  implements Serializable
       }
       }
    }
-   
+
    public static void saveMember(Member member)
    {
       ObjectOutputStream out = null;
@@ -81,9 +80,9 @@ public final class FileHandler  implements Serializable
       File file = new File("members.bin");
       FileOutputStream fos = new FileOutputStream(file);
       out = new ObjectOutputStream(fos);
-      
+
          out.writeObject(member);
-      
+
       }
       catch(IOException e)
       {
@@ -95,7 +94,7 @@ public final class FileHandler  implements Serializable
       {
       out.close();
       }
-      
+
       catch (IOException e)
       {
       e.printStackTrace();
@@ -103,16 +102,16 @@ public final class FileHandler  implements Serializable
       }
    }
 // get members array
-   
+
   public static Member[] getMembers()
   {
      ArrayList<Object> membersList = new ArrayList<Object>();
      boolean cont = true;
      try{
-        
+
         FileInputStream fis = new FileInputStream("members.bin");
         ObjectInputStream input = new ObjectInputStream(fis);
-     
+
         while(cont){
            Object obj = input.readObject();
            if(obj != null)
@@ -123,9 +122,9 @@ public final class FileHandler  implements Serializable
      }catch(Exception e){
         //System.out.println(e.printStackTrace());
      }
-     
+
      return membersList.toArray(new Member[membersList.size()]);
-     
+
   }
 
    public static void saveEvents(Event[] events)
@@ -133,21 +132,21 @@ public final class FileHandler  implements Serializable
       ObjectOutputStream out = null;
       try
       {
-         
+
          FileOutputStream fos = new FileOutputStream("events.bin");
          out = new ObjectOutputStream(fos);
-         
+
          for(int i=0;i<events.length;i++)
          {
             out.writeObject(events[i]);
          }
-         
+
       }
       catch(IOException e)
       {
          e.printStackTrace();
       }
-      
+
       finally
       {
          try
@@ -160,18 +159,18 @@ public final class FileHandler  implements Serializable
          }
       }
    }
-   
+
    public static void saveEvent(Event event)
    {
       ObjectOutputStream out = null;
       try
       {
-         
+
          FileOutputStream fos = new FileOutputStream("events.bin");
          out = new ObjectOutputStream(fos);
-         
+
          out.writeObject(event);
-         
+
       }
       catch(IOException e)
       {
@@ -183,25 +182,25 @@ public final class FileHandler  implements Serializable
          {
             out.close();
          }
-         
+
          catch (IOException e)
          {
             e.printStackTrace();
          }
       }
    }
-   
+
 // get events array
-   
+
    public static Event[] getEvents()
    {
       ArrayList<Object> eventsList = new ArrayList<Object>();
       boolean cont = true;
       try{
-        
+
          FileInputStream fis = new FileInputStream("events.bin");
          ObjectInputStream input = new ObjectInputStream(fis);
-      
+
          while(cont){
             Object obj = input.readObject();
             if(obj instanceof Event)
@@ -213,18 +212,18 @@ public final class FileHandler  implements Serializable
             {
                input.close();
             }
-            
+
             catch (IOException e)
             {
                e.printStackTrace();
             }
-         
+
       }catch(Exception e){
          //System.out.println(e.printStackTrace());
       }
-      
+
       return eventsList.toArray(new Event[eventsList.size()]);
-      
+
    }
 }
 

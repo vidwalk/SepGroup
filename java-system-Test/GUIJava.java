@@ -28,6 +28,8 @@ import javax.swing.JTextPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
+import javax.swing.JRadioButton;
+import javax.swing.JCheckBox;
 
 public class GUIJava
 {
@@ -67,9 +69,7 @@ public class GUIJava
    private JTextField textField_2;
    private JTextField textField_3;
    private JTextField textField_4;
-   private JTextField textField_5;
    private JTextField textField_6;
-   private JTextField textField_7;
    private JTextField textField_8;
    private JLabel lblNewLabel;
    private JLabel lblNewLabel_1;
@@ -81,7 +81,6 @@ public class GUIJava
    private JLabel lblNewLabel_4;
    private JLabel lblSearchEvent;
    private JTextField textField_9;
-   private JTextField textField_11;
    private JTextField textField_12;
    private JTextField textField_13;
    private JPanel panel_2;
@@ -111,24 +110,14 @@ public class GUIJava
    private JButton btnNonFinalized;
    private JButton btnFinalized;
    private JTextArea textArea;
-   private JScrollPane JPanel_Search;
-   private JList list_Search;
-   // Arrays of the textField objects of event
-   private JTextField[] arrayEventInfo = { textField, textField_1, textField_2,
-         textField_3, textField_4, textField_5, textField_6, textField_7,
-         textField_8 };
-   private JTextField[] arrayEventDateInfo = { textField_29, textField_30,
-         textField_31 };
-   private JTextField[] arrayEventLecturerInfo = { textField_9, textField_11,
-         textField_12, textField_13 };
-   private JTextField[] arrayEventSponsorInfo = { textField_14, textField_15,
-         textField_16 };
    public MainController controller = new MainController();
    private JPanel panel_10;
    private JPanel panel_11;
    private JTextArea textArea_1;
    private JScrollPane scrollPaneMember;
-
+   private JCheckBox chckbxTrue;
+   private JCheckBox chckbxTrue_1;
+   private JCheckBox chckbxTrue_2;
    /**
     * Launch the application.
     */
@@ -142,6 +131,7 @@ public class GUIJava
             {
                GUIJava window = new GUIJava();
                window.frmEventsAndMembers.setVisible(true);
+
             }
             catch (Exception e)
             {
@@ -298,6 +288,8 @@ public class GUIJava
       JButton btnCreateEvent = new JButton("Create Event");
       btnCreateEvent.addActionListener(new ActionListener()
       {
+
+
          public void actionPerformed(ActionEvent e)
          {
             if (e.getSource() == btnCreateEvent)
@@ -309,16 +301,16 @@ public class GUIJava
                textField_2.setText("" + event.getNrMembers());
                textField_3.setText(event.getLength());
                textField_4.setText("" + event.getDiscount());
-               textField_5.setText("" + event.isFinalized());
+               chckbxTrue.setSelected(false);
                textField_6.setText(event.getType());
-               textField_7.setText("" + event.isVegan());
+               chckbxTrue_1.setSelected(false);
                textField_8.setText(event.getLocation());
                textField_29.setText("" + event.getDayStart().getDay());
                textField_30.setText("" + event.getDayStart().getMonth());
                textField_31.setText("" + event.getDayStart().getYear());
                textArea.setText(event.getFeedback());
                textField_9.setText(event.getLecturer().getName());
-               textField_11.setText("" + event.getLecturer().isPaidFor());
+               chckbxTrue_2.setSelected(false);
                textField_12.setText(event.getLecturer().getEmail());
                textField_13.setText(event.getLecturer().getCategory());
                textField_14.setText(event.getSponsor().getName());
@@ -369,20 +361,10 @@ public class GUIJava
       panel_6.add(textField_4);
       textField_4.setColumns(10);
 
-      textField_5 = new JTextField();
-      textField_5.setBounds(6, 155, 86, 20);
-      panel_6.add(textField_5);
-      textField_5.setColumns(10);
-
       textField_6 = new JTextField();
       textField_6.setBounds(128, 155, 86, 20);
       panel_6.add(textField_6);
       textField_6.setColumns(10);
-
-      textField_7 = new JTextField();
-      textField_7.setBounds(264, 155, 86, 20);
-      panel_6.add(textField_7);
-      textField_7.setColumns(10);
 
       textField_8 = new JTextField();
       textField_8.setBounds(407, 155, 86, 20);
@@ -442,11 +424,6 @@ public class GUIJava
       panel_2.add(textField_9);
       textField_9.setColumns(10);
 
-      textField_11 = new JTextField();
-      textField_11.setBounds(132, 33, 86, 20);
-      panel_2.add(textField_11);
-      textField_11.setColumns(10);
-
       textField_12 = new JTextField();
       textField_12.setBounds(268, 33, 86, 20);
       panel_2.add(textField_12);
@@ -472,6 +449,11 @@ public class GUIJava
       lblNewLabel_7 = new JLabel("Category");
       lblNewLabel_7.setBounds(420, 18, 69, 14);
       panel_2.add(lblNewLabel_7);
+
+      chckbxTrue_2 = new JCheckBox("Yes");
+      chckbxTrue_2.setBounds(153, 32, 97, 23);
+      chckbxTrue_2.setSelected(false);
+      panel_2.add(chckbxTrue_2);
 
       panel_5 = new JPanel();
       panel_5.setBounds(6, 352, 356, 64);
@@ -537,10 +519,10 @@ public class GUIJava
                      textField_29.getText(), textField_30.getText(),
                      textField_31.getText(), textField_2.getText(),
                      textField_3.getText(), textField_4.getText(),
-                     textField_5.getText(), textField_6.getText(),
-                     textField_7.getText(), textField_8.getText(),
+                     chckbxTrue.isSelected(), textField_6.getText(),
+                     chckbxTrue_1.isSelected(), textField_8.getText(),
                      textArea.getText(), textField_9.getText(),
-                     textField_12.getText(), textField_11.getText(),
+                     textField_12.getText(), chckbxTrue_2.isSelected(),
                      textField_13.getText(), textField_14.getText(),
                      textField_15.getText(), textField_16.getText());
                /*
@@ -628,16 +610,16 @@ public class GUIJava
                   textField_2.setText("");
                   textField_3.setText("");
                   textField_4.setText("");
-                  textField_5.setText("");
+                  chckbxTrue.setSelected(false);
                   textField_6.setText("");
-                  textField_7.setText("");
+                  chckbxTrue_1.setSelected(false);
                   textField_8.setText("");
                   textField_29.setText("");
                   textField_30.setText("");
                   textField_31.setText("");
                   textArea.setText("");
                   textField_9.setText("");
-                  textField_11.setText("");
+                  chckbxTrue_2.setSelected(false);
                   textField_12.setText("");
                   textField_13.setText("");
                   textField_14.setText("");
@@ -668,16 +650,16 @@ public class GUIJava
                   textField_2.setText("" + event.getNrMembers());
                   textField_3.setText(event.getLength());
                   textField_4.setText("" + event.getDiscount());
-                  textField_5.setText("" + event.isFinalized());
+                  chckbxTrue.setSelected(event.isFinalized());
                   textField_6.setText(event.getType());
-                  textField_7.setText("" + event.isVegan());
+                  chckbxTrue_1.setSelected(event.isVegan());
                   textField_8.setText(event.getLocation());
                   textField_29.setText("" + event.getDayStart().getDay());
                   textField_30.setText("" + event.getDayStart().getMonth());
                   textField_31.setText("" + event.getDayStart().getYear());
                   textArea.setText(event.getFeedback());
                   textField_9.setText(event.getLecturer().getName());
-                  textField_11.setText("" + event.getLecturer().isPaidFor());
+                  chckbxTrue_2.setSelected(event.getLecturer().isPaidFor());
                   textField_12.setText(event.getLecturer().getEmail());
                   textField_13.setText(event.getLecturer().getCategory());
                   textField_14.setText(event.getSponsor().getName());
@@ -690,16 +672,16 @@ public class GUIJava
                   textField_2.setText("");
                   textField_3.setText("");
                   textField_4.setText("");
-                  textField_5.setText("");
+                  chckbxTrue.setSelected(false);
                   textField_6.setText("");
-                  textField_7.setText("");
+                  chckbxTrue_1.setSelected(false);
                   textField_8.setText("");
                   textField_29.setText("");
                   textField_30.setText("");
                   textField_31.setText("");
                   textArea.setText("");
                   textField_9.setText("");
-                  textField_11.setText("");
+                  chckbxTrue_2.setSelected(false);
                   textField_12.setText("");
                   textField_13.setText("");
                   textField_14.setText("");
@@ -711,6 +693,16 @@ public class GUIJava
       });
       btnSearch_2.setBounds(159, 29, 89, 23);
       panel_6.add(btnSearch_2);
+
+      chckbxTrue = new JCheckBox("Yes");
+      chckbxTrue.setBounds(25, 154, 97, 23);
+      chckbxTrue.setSelected(false);
+      panel_6.add(chckbxTrue);
+
+      chckbxTrue_1 = new JCheckBox("Yes");
+      chckbxTrue_1.setBounds(279, 154, 97, 23);
+      chckbxTrue_1.setSelected(false);
+      panel_6.add(chckbxTrue_1);
 
       JPanel panel_4 = new JPanel();
       tabbedPane_1.addTab("Search/List", null, panel_4, null);
@@ -956,7 +948,7 @@ public class GUIJava
       tabbedPane_4.addTab("List Members", null, panel_8, null);
       panel_8.setLayout(null);
 
-      btnListByEmails = new JButton("List all by Emails");
+      btnListByEmails = new JButton("List all Emails");
 
       btnListByEmails.setBounds(63, 56, 140, 23);
       panel_8.add(btnListByEmails);

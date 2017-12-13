@@ -15,7 +15,7 @@ public class Event implements Serializable
    private String feedback;
    private Lecturer lecturer = new Lecturer();
    private Sponsor sponsor = new Sponsor();
-   
+
    public Event()
    {
       this.name = "input info";
@@ -30,118 +30,118 @@ public class Event implements Serializable
       this.location = "input info(optional)";
       this.feedback = "input info";
    }
- 
+
    public String getName()
    {
       return name;
    }
- 
+
    public void setName(String name)
    {
       this.name = name;
    }
- 
+
    public int getNrParticipants()
    {
       return nrParticipants;
    }
- 
+
    public void setNrParticipants(int nrParticipants)
    {
       this.nrParticipants = nrParticipants;
    }
- 
+
    public Date getDayStart()
    {
       return dayStart;
    }
- 
+
    public void setDayStart(int d, int m, int y)
    {
       this.dayStart = new Date(d,m,y);
    }
- 
+
    public int getNrMembers()
    {
       return nrMembers;
    }
- 
+
    public void setNrMembers(int nrMembers)
    {
       this.nrMembers = nrMembers;
    }
- 
+
    public String getLength()
    {
       return length;
    }
- 
+
    public void setLength(String length)
    {
       this.length = length;
    }
- 
+
    public int getDiscount()
    {
       return discount;
    }
- 
+
    public void setDiscount(int discount)
    {
       this.discount = discount;
    }
- 
+
    public boolean isFinalized()
    {
       return finalized;
    }
- 
+
    public void setFinalized(boolean finalized)
    {
       this.finalized = finalized;
    }
- 
+
    public String getType()
    {
       return type;
    }
- 
+
    public void setType(String type)
    {
       this.type = type;
    }
- 
+
    public boolean isVegan()
    {
       return vegan;
    }
- 
+
    public void setVegan(boolean vegan)
    {
       this.vegan = vegan;
    }
- 
+
    public String getLocation()
    {
       return location;
    }
- 
+
    public void setLocation(String location)
    {
       this.location = location;
    }
- 
+
    public String getFeedback()
    {
       return feedback;
    }
- 
+
    public void setFeedback(String feedback)
    {
       this.feedback = feedback;
    }
- 
- 
+
+
 
    public void setEvent(String name, int nrParticipants, Date dayStart,
          int nrMembers, String length, int discount, boolean finalized,
@@ -183,26 +183,6 @@ public class Event implements Serializable
       this.sponsor = sponsor;
    }
 
-   @Override
-   public int hashCode()
-   {
-      final int prime = 31;
-      int result = 1;
-      result = prime * result + ((dayStart == null) ? 0 : dayStart.hashCode());
-      result = prime * result + discount;
-      result = prime * result + ((feedback == null) ? 0 : feedback.hashCode());
-      result = prime * result + (finalized ? 1231 : 1237);
-      result = prime * result + ((lecturer == null) ? 0 : lecturer.hashCode());
-      result = prime * result + ((length == null) ? 0 : length.hashCode());
-      result = prime * result + ((location == null) ? 0 : location.hashCode());
-      result = prime * result + ((name == null) ? 0 : name.hashCode());
-      result = prime * result + nrMembers;
-      result = prime * result + nrParticipants;
-      result = prime * result + ((sponsor == null) ? 0 : sponsor.hashCode());
-      result = prime * result + ((type == null) ? 0 : type.hashCode());
-      result = prime * result + (vegan ? 1231 : 1237);
-      return result;
-   }
 
    @Override
    public boolean equals(Object obj)
@@ -293,5 +273,5 @@ public class Event implements Serializable
             + location + ", feedback=" + feedback + ", lecturer=" + lecturer
             + ", sponsor=" + sponsor + "]"  + "\n";
    }
- 
+
 }

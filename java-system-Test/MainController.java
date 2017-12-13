@@ -21,12 +21,12 @@ public class MainController
     memberList.addMember(member);
     FileHandler.saveMembers(memberList.getMembersArray());
  }
- 
+
  public String listMembers()
  {
     return memberList.toString();
  }
- 
+
  public String listMembersByEmails()
  {
     String namesAndEmails="";
@@ -35,28 +35,28 @@ public class MainController
     {
       namesAndEmails += members[i].getName()+" / "+members[i].getEmail()+"\n";
     }
-   
-    FileHandler.saveMembersMailsToDoc(namesAndEmails); 
+
+    FileHandler.saveMembersMailsToDoc(namesAndEmails);
     return namesAndEmails;
-    
+
  }
- 
+
  public String listMembersByPreference(String preference)
  {
     String namesAndEmails="By "+preference+": \n";
     Member[] members = memberList.getMembersArray();
     for(int i=0;i<members.length;i++)
     {
-       
+
        if(members[i].getCategory().equalsIgnoreCase(preference))
        {
           namesAndEmails += members[i].getName()+" / "+members[i].getEmail()+"\n";
        }
     }
-   
+
     return namesAndEmails;
  }
- 
+
  public String listMembersIfNotPaid()
  {
     String namesAndEmails="These members have not paid this year's fee: \n";
@@ -64,16 +64,16 @@ public class MainController
     Member[] members = memberList.getMembersArray();
     for(int i=0;i<members.length;i++)
     {
-       
+
        if(members[i].getYearPayment() != date.getYear())
        {
           namesAndEmails += members[i].getName()+" / "+members[i].getEmail()+" / Year of last payment: "+members[i].getYearPayment()+"\n";
        }
     }
-   
+
     return namesAndEmails;
  }
- 
+
  public Member selectMemberByName(String name)
  {
     Member[] members = memberList.getMembersArray();
@@ -83,11 +83,11 @@ public class MainController
        {
           return members[i];
        }
-       
+
     }
     return null;
  }
- 
+
  public void removeMember(String name)
  {
     Member[] members = memberList.getMembersArray();
@@ -97,13 +97,13 @@ public class MainController
        {
           memberList.removeMember(i);
        }
-       
+
     }
     FileHandler.saveMembers(memberList.getMembersArray());
  }
- 
- 
- 
+
+
+
    public void createEvent()
    {
       eventList.createEvents();
@@ -128,43 +128,24 @@ public class MainController
 
    public void modifyEvent(Event event, String name, String nrParticipants,
          String day, String month, String year, String nrMembers, String length,
-         String discount, String finalized, String type, String vegan,
+         String discount, boolean finalized, String type, boolean vegan,
          String location, String feedback, String lecturerName,
-         String lecturerEmail, String lecturerPaidFor, String lecturerCategory,
+         String lecturerEmail, boolean lecturerPaidFor, String lecturerCategory,
          String sponsorName, String sponsorEmail, String sponsorCategory)
    {
-      boolean finalizedBoolean = false;
-      boolean veganBoolean = false;
-      boolean isPaidFor = false;
       int numberParticipants = Integer.parseInt(nrParticipants);
       Date dayStart = new Date(Integer.parseInt(day), Integer.parseInt(month),
             Integer.parseInt(year));
       int numberMembers = Integer.parseInt(nrMembers);
       int nrdiscount = Integer.parseInt(discount);
-      if (finalized.equals("true"))
-         finalizedBoolean = true;
-      else if (finalized.equals("false"))
-         finalizedBoolean = false;
-      if (vegan.equals("true"))
-         veganBoolean = true;
-      else if (vegan.equals("false"))
-         veganBoolean = false;
-      if (finalized.equals("true"))
-         finalizedBoolean = true;
-      else if (finalized.equals("false"))
-         finalizedBoolean = false;
-      if (lecturerPaidFor.equals("true"))
-         isPaidFor = true;
-      else if (lecturerPaidFor.equals("false"))
-         isPaidFor = false;
-      Lecturer lecturer = new Lecturer(lecturerName, lecturerEmail, isPaidFor,
+      Lecturer lecturer = new Lecturer(lecturerName, lecturerEmail, lecturerPaidFor,
             lecturerCategory);
       Sponsor sponsor = new Sponsor(sponsorName, sponsorEmail, sponsorCategory);
       try
       {
          eventList.getEvent().get((eventList.searchIndex(event))).setEvent(name,
                numberParticipants, dayStart, numberMembers, length, nrdiscount,
-               finalizedBoolean, type, veganBoolean, location, feedback,
+               finalized, type, vegan, location, feedback,
                lecturer, sponsor);
       }
       catch (IndexOutOfBoundsException e)
