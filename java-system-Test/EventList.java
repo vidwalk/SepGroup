@@ -14,11 +14,20 @@ public class EventList
    private ArrayList<Event> event = new ArrayList<Event>(
          Arrays.asList(eventArray));
 
+	/**
+	 * Return an ArrayList for all events
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public ArrayList<Event> getEvent()
    {
       return event;
    }
-
+	/**
+	 * Return an array for all events
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public Event[] getArrayEvent()
    {
       if (event.size() > 0)
@@ -26,23 +35,39 @@ public class EventList
       else
          return null;
    }
-
+	/**
+	 * Create or change the event list
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public void setEvent(ArrayList<Event> event)
    {
       this.event = event;
    }
-
+	/**
+	 * Add an created event to the ArrayList of events
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public void createEvents()
    {
       Event createEvent = new Event();
       event.add(createEvent);
    }
-
+	/**
+	 * Add an event to the ArrayList of events
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public void addEvents(Event event)
    {
       this.event.add(event);
    }
-
+	/**
+	 * Remove an event in the ArrayList of events
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public void removeEvents(Event event)
    {
 
@@ -55,7 +80,11 @@ public class EventList
       }
       FileHandler.saveEvents(getArrayEvent());
    }
-
+	/**
+	 * Search an event by giving the category
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public String searchByCategoryEvent(String category)
    {
       String string = "";
@@ -69,7 +98,11 @@ public class EventList
       }
       return string;
    }
-
+	/**
+	 * Search for not finalized events
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public String searchByNotFinalized()
    {
       String string = "";
@@ -83,7 +116,11 @@ public class EventList
       }
       return string;
    }
-
+	/**
+	 * Search for finalized events
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public String searchByFinalized()
    {
       String string = "";
@@ -97,7 +134,11 @@ public class EventList
       }
       return string;
    }
-
+	/**
+	 * Writing a list of lecturers which has a certain category in the file
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public void listByCategoryLecturer(String category)
    {
       PrintWriter fos = null;
@@ -123,7 +164,11 @@ public class EventList
          fos.close();
       }
    }
-
+	/**
+	 * Writing a list of sponsors which has a certain category in the file
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public void listByCategorySponsor(String category)
    {
       PrintWriter fos = null;
@@ -149,7 +194,11 @@ public class EventList
          fos.close();
       }
    }
-
+	/**
+	 * Return an event by giving the name
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public Event searchEvent(String name)
    {
       Event other = new Event();
@@ -160,12 +209,20 @@ public class EventList
             return event[i];
       return other;
    }
-
+	/**
+	 * Return the last event in the ArrayList
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public Event getLastEvent()
    {
       return event.get(event.size() - 1);
    }
-
+	/**
+	 * Return the position of an event in the ArrayList
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    public int searchIndex(Event event)
    {
       for (int i = 0; i < this.event.size(); i++)
@@ -175,7 +232,11 @@ public class EventList
       }
       return -1;
    }
-
+	/**
+	 * Return all events in a passage
+	 * 
+	 * @author IT-1V-A17-Group2
+	 */
    @Override
    public String toString()
    {
