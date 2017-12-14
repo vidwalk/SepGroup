@@ -8,11 +8,13 @@ import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.io.Serializable;
+/**
+ * A static class for file handling
+ * @author IT-1V-A17-Group2
+ */
 public final class FileHandler  implements Serializable
 {
-   /**
-    *
-    */
+
    public static File eventFile;
    public FileHandler()
    {

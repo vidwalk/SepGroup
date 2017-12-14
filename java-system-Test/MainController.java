@@ -1,9 +1,18 @@
-
+ /**
+    * Class that manages the main methods used in the GUI
+    *
+    * @author IT-1V-A17-Group2
+    */
 public class MainController
 {
    EventList eventList;
    MemberList memberList;
 
+
+   /**
+    * The constructor in which the EventList and MemberList objects are created
+    *@author IT-1V-A17-Group2
+    */
    public MainController()
    {
       eventList = new EventList();
@@ -15,19 +24,31 @@ public class MainController
        memberList.addMember(membersArray[i]);
     }
    }
-// adding new member to array and saving whole array to a file
- public void createMember(Member member)
+
+ /**
+  * A method for adding a new member to an array and saving whole array to a file
+ * @author IT-1V-A17-Group2
+ */
+public void createMember(Member member)
  {
     memberList.addMember(member);
     FileHandler.saveMembers(memberList.getMembersArray());
  }
 
- public String listMembers()
+ /**
+  * A method to return the a string of all the members
+ * @author IT-1V-A17-Group2
+ */
+public String listMembers()
  {
     return memberList.toString();
  }
 
- public String listMembersByEmails()
+ /**
+  * A method to return a string of the member's email
+ * @author IT-1V-A17-Group2
+ */
+public String listMembersByEmails()
  {
     String namesAndEmails="";
     Member[] members = memberList.getMembersArray();
@@ -41,7 +62,11 @@ public class MainController
 
  }
 
- public String listMembersByPreference(String preference)
+ /**
+  * A method to return a string of all the members by preference
+ * @author IT-1V-A17-Group2
+ */
+public String listMembersByPreference(String preference)
  {
     String namesAndEmails="By "+preference+": \n";
     Member[] members = memberList.getMembersArray();
@@ -57,7 +82,11 @@ public class MainController
     return namesAndEmails;
  }
 
- public String listMembersIfNotPaid()
+ /**
+  *  A method to return a string of all the members that did not pay the annual fee
+ * @author IT-1V-A17-Group2
+ */
+public String listMembersIfNotPaid()
  {
     String namesAndEmails="These members have not paid this year's fee: \n";
     Date date = new Date();
@@ -74,7 +103,11 @@ public class MainController
     return namesAndEmails;
  }
 
- public Member selectMemberByName(String name)
+ /**
+  * A method to select a member by a string
+ * @author IT-1V-A17-Group2
+ */
+public Member selectMemberByName(String name)
  {
     Member[] members = memberList.getMembersArray();
     for(int i=0;i<members.length;i++)
@@ -88,7 +121,11 @@ public class MainController
     return null;
  }
 
- public void removeMember(String name)
+ /**
+  * A method to remove a member by a string
+ * @author IT-1V-A17-Group2
+ */
+public void removeMember(String name)
  {
     Member[] members = memberList.getMembersArray();
     for(int i=0;i<members.length;i++)
@@ -103,7 +140,10 @@ public class MainController
  }
 
 
-
+   /**
+    * A method that creates an event and saves it to a file
+    * @author IT-1V-A17-Group2
+    */
    public void createEvent()
    {
       eventList.createEvents();
@@ -112,13 +152,20 @@ public class MainController
    }
 
    // removes an event and saves the events again
+   /**
+    * A method that removes an event and saves all the events again to a file
+    * @author IT-1V-A17-Group2
+    */
    public void removeEvent(String name)
    {
       eventList.removeEvents(eventList.searchEvent(name));
       System.out.println("event removed");
    }
 
-   // search for an event
+   /**
+    * A method that searches for a event by a string
+    * @author IT-1V-A17-Group2
+    */
    public Event searchEvent(String name)
    {
       return eventList.searchEvent(name);
@@ -126,6 +173,10 @@ public class MainController
 
    // modify an event
 
+   /**
+    * A method that modifies an event and saves every event to a file
+    * @author IT-1V-A17-Group2
+    */
    public void modifyEvent(Event event, String name, String nrParticipants,
          String day, String month, String year, String nrMembers, String length,
          String discount, boolean finalized, String type, boolean vegan,
@@ -150,7 +201,6 @@ public class MainController
       }
       catch (IndexOutOfBoundsException e)
       {
-         // TODO Auto-generated catch block
          System.out.println("no event found");
       }
       FileHandler.saveEvents(eventList.getArrayEvent());
