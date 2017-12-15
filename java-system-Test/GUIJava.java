@@ -525,27 +525,6 @@ public class GUIJava
                      textField_12.getText(), chckbxTrue_2.isSelected(),
                      textField_13.getText(), textField_14.getText(),
                      textField_15.getText(), textField_16.getText());
-               /*
-                * Event event, String name, String nrParticipants, String
-                * day,String month, String year, String nrMembers, String
-                * length, String discount, String finalized, String type, String
-                * vegan, String location, String feedback, String lecturerName,
-                * String lecturerEmail, String lecturerPaidFor,String
-                * lecturerCategory, String sponsorName, String sponsorEmail,
-                * String sponsorCategory textField.setText(event.getName()
-                * textField_1.getNrParticipants() textField_2.getNrMembers()
-                * textField_3.getLength() textField_4.getDiscount()
-                * textField_5.isFinalized() textField_6.getType()
-                * textField_7.isVegan() textField_8.getLocation()
-                * textField_29.getDay() textField_30.getMonth()
-                * textField_31.getYear() textArea.getFeedback()
-                * textField_9.LecturergetName() textField_11Lecturer.isPaidFor()
-                * textField_12..getLecturer().getEmail()
-                * textField_13.getLecturer().getCategory()
-                * textField_14.getSponsor().getName()
-                * textField_15.getSponsor().getEmail()
-                * textField_16.getSponsor().getCategory()
-                */
             }
          }
       });
